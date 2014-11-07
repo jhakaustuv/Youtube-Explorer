@@ -1,6 +1,9 @@
 package com.example.youtubeexplorer;
 
+import com.example.youtubeexplorer.activities.MainActivity;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +15,8 @@ public class YoutubeExplorer extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube_explorer);
+        
+        startActivity(new Intent(this, MainActivity.class));
     }
 
 

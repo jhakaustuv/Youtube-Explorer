@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +23,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.youtubeexplorer.activities.MainActivity"
+            android:label="@string/title_activity_main" >
         </activity>
     </application>
 
